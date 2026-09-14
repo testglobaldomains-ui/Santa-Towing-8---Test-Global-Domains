@@ -6,17 +6,7 @@ import ScrollToFooterArrow from '@/components/ui/ScrollToFooterArrow';
 import { cn } from '@/lib/utils';
 import SEO from '@/components/seo/SEO';
 
-// Local mock data since we need more items for filtering
-const SALES_VEHICLES = [
-  { id: 1, type: 'New', make: 'Mercedes-Benz', model: 'E-Class', name: '2024 Mercedes-Benz E-Class', price: 'GH₵ 980,000', fuel: 'Hybrid', transmission: 'Automatic', year: 2024, mileage: '0 km', bodyType: 'Sedan', image: 'https://i.ibb.co/KcZkH37Y/Image-3-Sedan-Toyotta-Corolla.jpg' },
-  { id: 2, type: 'New', make: 'Range Rover', model: 'Sport', name: '2024 Range Rover Sport', price: 'GH₵ 1,450,000', fuel: 'Petrol', transmission: 'Automatic', year: 2024, mileage: '25 km', bodyType: 'SUV', image: 'https://i.ibb.co/zVkLKHdN/Image-2-A-SUV-KIA-Sportage-2024-Ratio.png' },
-  { id: 3, type: 'Foreign Used', make: 'Toyota', model: 'Camry', name: '2020 Toyota Camry SE', price: 'GH₵ 264,000', fuel: 'Petrol', transmission: 'Automatic', year: 2020, mileage: '72,000 km', bodyType: 'Sedan', image: 'https://i.ibb.co/KcZkH37Y/Image-3-Sedan-Toyotta-Corolla.jpg' },
-  { id: 4, type: 'Ghana Used', make: 'Hyundai', model: 'Elantra', name: '2018 Hyundai Elantra', price: 'GH₵ 144,000', fuel: 'Petrol', transmission: 'Manual', year: 2018, mileage: '136,000 km', bodyType: 'Sedan', image: 'https://i.ibb.co/KcZkH37Y/Image-3-Sedan-Toyotta-Corolla.jpg' },
-  { id: 5, type: 'Foreign Used', make: 'Honda', model: 'CR-V', name: '2019 Honda CR-V EX', price: 'GH₵ 320,000', fuel: 'Petrol', transmission: 'Automatic', year: 2019, mileage: '58,000 km', bodyType: 'SUV', image: 'https://i.ibb.co/zVkLKHdN/Image-2-A-SUV-KIA-Sportage-2024-Ratio.png' },
-  { id: 6, type: 'Ghana Used', make: 'Kia', model: 'Rio', name: '2017 Kia Rio', price: 'GH₵ 95,000', fuel: 'Petrol', transmission: 'Manual', year: 2017, mileage: '150,000 km', bodyType: 'Hatchback', image: 'https://i.ibb.co/Mx8G6vHw/Image-5-Economy-Nissan-Almera-2021.jpg' },
-  { id: 7, type: 'New', make: 'Toyota', model: 'Hilux', name: '2024 Toyota Hilux Invincible', price: 'GH₵ 850,000', fuel: 'Diesel', transmission: 'Automatic', year: 2024, mileage: '10 km', bodyType: 'Pickup', image: 'https://i.ibb.co/vC6nfrK8/Image-7-Pickup-Toyota-Hilux-2023.jpg' },
-  { id: 8, type: 'Foreign Used', make: 'Lexus', model: 'RX', name: '2021 Lexus RX 350', price: 'GH₵ 680,000', fuel: 'Petrol', transmission: 'Automatic', year: 2021, mileage: '35,000 km', bodyType: 'SUV', image: 'https://i.ibb.co/zVkLKHdN/Image-2-A-SUV-KIA-Sportage-2024-Ratio.png' },
-];
+import { VEHICLES } from '@/data/mockData';
 
 const WHY_BUY_FEATURES = [
   { title: 'Inspected & Verified Vehicles', icon: ShieldCheck },
@@ -47,8 +37,8 @@ export default function Sales() {
   const tabs = ['All', 'New', 'Foreign Used', 'Ghana Used'];
   
   const filteredVehicles = activeTab === 'All' 
-    ? SALES_VEHICLES 
-    : SALES_VEHICLES.filter(v => v.type === activeTab);
+    ? VEHICLES 
+    : VEHICLES.filter(v => v.type === activeTab);
 
   return (
     <main className="pt-24 lg:pt-[104px]">
@@ -441,7 +431,7 @@ export default function Sales() {
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {SALES_VEHICLES.slice(0, 3).map((vehicle, idx) => (
+            {VEHICLES.slice(0, 3).map((vehicle, idx) => (
               <motion.div
                 key={vehicle.id}
                 initial={{ opacity: 0, y: 20 }}

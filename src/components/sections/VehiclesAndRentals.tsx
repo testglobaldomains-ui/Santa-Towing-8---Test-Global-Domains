@@ -9,7 +9,7 @@ export function FeaturedVehicles() {
   const [activeTab, setActiveTab] = useState('New');
   const tabs = ['New', 'Foreign Used', 'Ghana Used'];
   
-  const filteredVehicles = VEHICLES.filter(v => v.type === activeTab);
+  const filteredVehicles = VEHICLES.filter(v => v.type === activeTab).slice(0, 8);
 
   return (
     <section className="py-16 md:py-20 lg:py-24 bg-secondary text-white relative overflow-hidden">
@@ -33,11 +33,11 @@ export function FeaturedVehicles() {
           {/* Tab Filter Pills */}
           <div className="flex bg-white/10 p-1.5 rounded-[1px] backdrop-blur-md self-start md:self-end border border-white/15 overflow-x-auto no-scrollbar max-w-full">
             {tabs.map(tab => (
-              <button className="rounded-[50px]"
+              <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
                 className={cn(
-                  "px-5 py-2 rounded-md font-bold text-sm transition-all duration-200 whitespace-nowrap",
+                  "px-5 py-2 rounded-[50px] font-bold text-sm transition-all duration-200 whitespace-nowrap",
                   activeTab === tab 
                     ? "bg-accent text-white shadow-md shadow-accent/30" 
                     : "text-white/80 hover:text-white hover:bg-white/10"
@@ -60,7 +60,7 @@ export function FeaturedVehicles() {
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.3 }}
                 key={vehicle.id}
-                className="bg-white/5 rounded-[1px] overflow-hidden border border-white/15 hover:border-accent/50 transition-all duration-300 group flex flex-col hover:-translate-y-1.5 hover:shadow-2xl hover:bg-white/10"
+                className="bg-[#FFFFFF] text-dark rounded-[1px] overflow-hidden border border-gray-200 hover:border-accent/50 transition-all duration-300 group flex flex-col hover:-translate-y-1.5 hover:shadow-2xl"
               >
                 {/* Image & Ribbon Badges */}
                 <div className="aspect-[4/3] relative overflow-hidden bg-black/40">
@@ -86,12 +86,12 @@ export function FeaturedVehicles() {
                   <h3 className="text-lg font-bold mb-1.5 group-hover:text-accent transition-colors">
                     {vehicle.name}
                   </h3>
-                  <div className="text-2xl font-extrabold text-white mb-5 tracking-tight">
+                  <div className="text-2xl font-extrabold text-dark mb-5 tracking-tight">
                     {vehicle.price}
                   </div>
                   
                   {/* Specs Grid */}
-                  <div className="grid grid-cols-2 gap-3 mb-6 flex-1 text-xs text-white/80 border-t border-b border-white/10 py-3.5">
+                  <div className="grid grid-cols-2 gap-3 mb-6 flex-1 text-xs text-dark/80 border-t border-b border-gray-100 py-3.5">
                     <div className="flex items-center gap-2">
                       <Fuel className="w-4 h-4 text-accent" />
                       <span>{vehicle.fuel}</span>
@@ -114,7 +114,7 @@ export function FeaturedVehicles() {
                   <div className="grid grid-cols-2 gap-2 mt-auto">
                     <Link 
                       to="/sales" 
-                      className="bg-white/10 hover:bg-white/20 text-white py-2.5 font-bold transition-colors text-xs sm:text-sm text-center flex items-center justify-center border border-white/15 rounded-[50px]"
+                      className="bg-slate-100 hover:bg-slate-200 text-dark py-2.5 font-bold transition-colors text-xs sm:text-sm text-center flex items-center justify-center border border-gray-200 rounded-[50px]"
                     >
                       Quick View
                     </Link>

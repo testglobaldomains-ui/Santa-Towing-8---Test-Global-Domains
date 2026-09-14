@@ -90,10 +90,23 @@ export const SERVICES = [
 ];
 
 export const VEHICLES = [
+  // New Vehicles
   { id: 1, type: 'New', name: '2024 Luxury Sedan', price: 'GH₵ 540,000', fuel: 'Hybrid', transmission: 'Automatic', year: 2024, mileage: '0 km', image: 'https://i.ibb.co/KcZkH37Y/Image-3-Sedan-Toyotta-Corolla.jpg' },
   { id: 2, type: 'New', name: '2024 Premium SUV', price: 'GH₵ 780,000', fuel: 'Petrol', transmission: 'Automatic', year: 2024, mileage: '25 km', image: 'https://i.ibb.co/zVkLKHdN/Image-2-A-SUV-KIA-Sportage-2024-Ratio.png' },
-  { id: 3, type: 'Foreign Used', name: '2020 Midsize Sedan', price: 'GH₵ 264,000', fuel: 'Petrol', transmission: 'Automatic', year: 2020, mileage: '72,000 km', image: 'https://i.ibb.co/KcZkH37Y/Image-3-Sedan-Toyotta-Corolla.jpg' },
-  { id: 4, type: 'Ghana Used', name: '2018 Compact Hatchback', price: 'GH₵ 144,000', fuel: 'Petrol', transmission: 'Manual', year: 2018, mileage: '136,000 km', image: 'https://i.ibb.co/Mx8G6vHw/Image-5-Economy-Nissan-Almera-2021.jpg' },
+  { id: 3, type: 'New', name: '2024 Executive Pickup', price: 'GH₵ 620,000', fuel: 'Diesel', transmission: 'Automatic', year: 2024, mileage: '15 km', image: 'https://i.ibb.co/vC6nfrK8/Image-7-Pickup-Toyota-Hilux-2023.jpg' },
+  { id: 4, type: 'New', name: '2024 Passenger Van', price: 'GH₵ 690,000', fuel: 'Diesel', transmission: 'Manual', year: 2024, mileage: '40 km', image: 'https://i.ibb.co/WpNkptMZ/Image-4-Van-Hyundai-H1-2022.jpg' },
+
+  // Foreign Used Vehicles
+  { id: 5, type: 'Foreign Used', name: '2020 Midsize Sedan', price: 'GH₵ 264,000', fuel: 'Petrol', transmission: 'Automatic', year: 2020, mileage: '72,000 km', image: 'https://i.ibb.co/KcZkH37Y/Image-3-Sedan-Toyotta-Corolla.jpg' },
+  { id: 6, type: 'Foreign Used', name: '2019 Luxury SUV', price: 'GH₵ 450,000', fuel: 'Diesel', transmission: 'Automatic', year: 2019, mileage: '65,000 km', image: 'https://i.ibb.co/zVkLKHdN/Image-2-A-SUV-KIA-Sportage-2024-Ratio.png' },
+  { id: 7, type: 'Foreign Used', name: '2021 Premium Hatchback', price: 'GH₵ 210,000', fuel: 'Petrol', transmission: 'Automatic', year: 2021, mileage: '48,000 km', image: 'https://i.ibb.co/Mx8G6vHw/Image-5-Economy-Nissan-Almera-2021.jpg' },
+  { id: 8, type: 'Foreign Used', name: '2018 Heavy Duty Pickup', price: 'GH₵ 340,000', fuel: 'Diesel', transmission: 'Manual', year: 2018, mileage: '92,000 km', image: 'https://i.ibb.co/vC6nfrK8/Image-7-Pickup-Toyota-Hilux-2023.jpg' },
+
+  // Ghana Used Vehicles
+  { id: 9, type: 'Ghana Used', name: '2018 Compact Hatchback', price: 'GH₵ 144,000', fuel: 'Petrol', transmission: 'Manual', year: 2018, mileage: '136,000 km', image: 'https://i.ibb.co/Mx8G6vHw/Image-5-Economy-Nissan-Almera-2021.jpg' },
+  { id: 10, type: 'Ghana Used', name: '2015 Family SUV', price: 'GH₵ 185,000', fuel: 'Petrol', transmission: 'Automatic', year: 2015, mileage: '185,000 km', image: 'https://i.ibb.co/zVkLKHdN/Image-2-A-SUV-KIA-Sportage-2024-Ratio.png' },
+  { id: 11, type: 'Ghana Used', name: '2017 Commuter Sedan', price: 'GH₵ 120,000', fuel: 'Petrol', transmission: 'Manual', year: 2017, mileage: '162,000 km', image: 'https://i.ibb.co/KcZkH37Y/Image-3-Sedan-Toyotta-Corolla.jpg' },
+  { id: 12, type: 'Ghana Used', name: '2014 Utility Pickup', price: 'GH₵ 165,000', fuel: 'Diesel', transmission: 'Manual', year: 2014, mileage: '210,000 km', image: 'https://i.ibb.co/vC6nfrK8/Image-7-Pickup-Toyota-Hilux-2023.jpg' },
 ];
 
 export const RENTAL_CATEGORIES = [
