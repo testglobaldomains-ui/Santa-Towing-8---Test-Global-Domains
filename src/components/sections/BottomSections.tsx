@@ -67,52 +67,11 @@ export function TowingAppPromo() {
             transition={{ duration: 0.6 }}
             className="relative hidden lg:flex items-center justify-center"
           >
-            {/* Phone Mockup */}
-            <div className="w-[300px] h-[580px] bg-dark rounded-[1px] border-[6px] border-white/20 shadow-2xl relative overflow-hidden flex flex-col p-3.5">
-              <div className="w-28 h-4 bg-white/20 rounded-[1px] mx-auto mb-3" />
-              <div className="flex-1 bg-white rounded-[1px] p-4 flex flex-col justify-between overflow-hidden relative shadow-inner">
-                {/* Map preview */}
-                <div className="h-44 bg-slate-100 rounded-[1px] overflow-hidden relative border border-gray-200">
-                  <img 
-                    src="https://i.ibb.co/gZh5x06r/Image-1-Towing-Vehicle.jpg" 
-                    alt="GPS Navigation" 
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-primary/20 flex items-center justify-center">
-                    <div className="bg-accent text-white px-3 py-1 text-xs font-bold shadow-md animate-bounce rounded-[50px]">
-                      Driver: 8 mins away
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="space-y-2.5 my-2">
-                  <div className="bg-slate-50 p-3 rounded-[1px] border border-gray-100 flex items-center justify-between">
-                    <div>
-                      <div className="text-[11px] text-gray-500 font-medium">Service</div>
-                      <div className="text-xs font-bold text-dark">Heavy Flatbed Tow</div>
-                    </div>
-                    <span className="text-xs font-extrabold text-accent">Dispatched</span>
-                  </div>
-                  <div className="bg-slate-50 p-3 rounded-[1px] border border-gray-100 flex items-center justify-between">
-                    <div>
-                      <div className="text-[11px] text-gray-500 font-medium">Driver Contact</div>
-                      <div className="text-xs font-bold text-dark">Kwame - Santa Fleet #4</div>
-                    </div>
-                    <div className="w-7 h-7 bg-primary text-white rounded-[1px] flex items-center justify-center">
-                      <Phone className="w-3.5 h-3.5" />
-                    </div>
-                  </div>
-                </div>
-
-                <a 
-                  href="tel:0244753849"
-                  className="w-full bg-accent text-white py-3 font-bold text-xs text-center shadow-md shadow-accent/30 flex items-center justify-center gap-1.5"
-                >
-                  <Phone className="w-3.5 h-3.5" />
-                  <span>Call Santa Dispatch</span>
-                </a>
-              </div>
-            </div>
+            <img 
+              src="https://i.ibb.co/0j2J24PF/Santa-App-Mobile-Screen.png" 
+              alt="Santa App Mobile Screen" 
+              className="w-full max-w-[585px] h-auto object-contain drop-shadow-2xl"
+            />
           </motion.div>
 
         </div>

@@ -187,7 +187,7 @@ export function QuickActions() {
                 to={href}
                 className="flex flex-col h-full bg-white rounded-[1px] p-5 sm:p-6 shadow-xl shadow-black/5 border border-gray-100/90 hover:-translate-y-1.5 transition-all duration-300 group hover:shadow-2xl hover:border-accent/30"
               >
-                <div className="w-12 h-12 bg-[#192C2C] flex items-center justify-center mb-4 group-hover:bg-white group-hover:shadow-md group-hover:shadow-accent/30 transition-all duration-300 shrink-0">
+                <div className="w-12 h-12 bg-[#192C2C] rounded-[50px] flex items-center justify-center mb-4 group-hover:bg-white group-hover:shadow-md group-hover:shadow-accent/30 transition-all duration-300 shrink-0">
                   <Icon className="w-6 h-6 text-white group-hover:text-[#192C2C] transition-colors duration-300" />
                 </div>
                 <h3 className="font-bold text-dark text-base sm:text-lg mb-1 leading-snug group-hover:text-accent transition-colors">

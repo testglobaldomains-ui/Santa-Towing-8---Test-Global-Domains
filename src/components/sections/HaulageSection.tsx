@@ -84,7 +84,6 @@ export function HaulageHomeSection() {
         {/* 4-Card Showcase Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {HOMEPAGE_HAULAGE_HIGHLIGHTS.map((item, idx) => {
-            const Icon = item.icon;
             return (
               <motion.div
                 key={idx}
@@ -102,9 +101,6 @@ export function HaulageHomeSection() {
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent" />
-                  <div className="absolute bottom-3 left-3 w-10 h-10 rounded-lg bg-accent text-white flex items-center justify-center shadow-md">
-                    <Icon className="w-5 h-5" />
-                  </div>
                 </div>
 
                 <div className="p-5 flex-1 flex flex-col">
